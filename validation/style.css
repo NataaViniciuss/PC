@@ -57,3 +57,20 @@ body {
     opacity: 0;
     transition-duration: 0.1s;
 }
+
+.icon-user {
+    height: 52%;
+}
+
+.circle {
+    background: #E6E6E6;
+    width: 12%;
+    height: 21%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 45%;
+    top: 28%;
+}
