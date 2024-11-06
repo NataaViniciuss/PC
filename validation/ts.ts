@@ -19,4 +19,5 @@ function time() {
     spanMouth.textContent = `${dayInPort} ,${numberDay} de ${monthInPort} `
 
 }
+
 setInterval(time);
