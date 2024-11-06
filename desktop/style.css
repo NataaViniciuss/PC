@@ -1,6 +1,7 @@
 body{
     background-image: url(img/imagem.png);
     background-size: cover ;
+    background-position: center;
     height: 100vh;
     margin: 0;
     box-sizing: border-box;
