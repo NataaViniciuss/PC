@@ -9,9 +9,8 @@ function time() {
     spanHours.textContent = `${hrs}`.padStart(2, "0");
     spanMinutes.textContent = `${min}`.padStart(2, "0");
 
-
     const spanMouth = document.querySelector('.mouth') as HTMLSpanElement;
-
+    console.log(tempo)
     const dayInPort :string = new Intl.DateTimeFormat('pt-BR', { weekday: 'long' }).format(tempo);
     const monthInPort :string = new Intl.DateTimeFormat('pt-BR', { month: 'long' }).format(tempo);
     const numberDay = tempo.getDate();
