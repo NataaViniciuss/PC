@@ -21,6 +21,7 @@ body {
     background-position: center;
 }
 
+
 .screen-blur.active {
     filter: blur(6px);
     transition-duration: 0.5s;
@@ -51,7 +52,7 @@ body {
     position: absolute;
     left: 20px;
     top: 65.5%;
-}
+} 
 
 .container.active {
     top: 60%;
@@ -64,14 +65,54 @@ body {
 }
 
 .circle {
-    background: #E6E6E6;
-    width: 12%;
-    height: 21%;
-    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(228, 228, 228);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+   
+}
+
+.bloco-login {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    color: beige;
+    opacity: 0;
+    left: 50em;
+    top: -10%;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    left: 45%;
-    top: 28%;
+
+}
+
+
+.bloco-login.active {
+    opacity: 100;
+    transition-duration: 1s;
+}
+
+.titulo-login {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    bottom: 29px;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.input-password {
+    padding: 9px;
+    width: 20em;
+    position: relative;
+    top: -49px;
+    border: 2px solid grey;
+    outline: none;
+}
+
+.input-password:hover {
+    border: 2px solid white;
 }

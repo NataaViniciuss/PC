@@ -25,9 +25,13 @@ setInterval(time);
 function animationScreen() {
     const screenBlur = document.querySelector('.screen-blur') as HTMLDivElement;
     const container = document.querySelector('.container') as HTMLDivElement;
+    const displaylogin = document.querySelector('.bloco-login') as HTMLDivElement;
+    
     screenBlur.addEventListener('click', () => {
-        container.classList.add('active')
+        container.classList.add('active');
         screenBlur.classList.add('active');
+        displaylogin.classList.add('active');
     })
 }
+
 animationScreen();
