@@ -59,37 +59,19 @@ body {
     transition-duration: 0.1s;
 }
 
-.user-icon {
-    height: 10em;
-    width: 100px;
+.icon-user {
+    height: 52%;
 }
 
-.fundo-user {
-    background-color: white;
-    border-radius: 50%;
-    width: 200px; 
-    height: 200px;
+.circle {
+    background: #E6E6E6;
+    width: 12%;
+    height: 21%;
+    border-radius: 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.titulo-login  {
-    color: white;
-    font-weight: 500;
-    font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.bloco-login {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
     align-items: center;
-    justify-content: center;
-}
-
-.input-submit {
-    width: 17em;
-    padding: 4.5px;  
+    position: fixed;
+    left: 45%;
+    top: 28%;
 }

@@ -1,0 +1,118 @@
+body{
+    background-image: url(img/imagem.png);
+    background-size: cover ;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    top: 96.2%;
+}
+
+.barra {
+    background-color: rgba(5, 13, 44, 0.882);
+    position: fixed;
+    height: 24px;
+    width: 100%;
+    bottom: 0;
+}
+
+.windows {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.windows:hover {
+    background: rgba(98, 97, 97, 0.573);
+}
+
+.windows:active{
+    background: rgba(98, 97, 97, 0.573);
+}
+
+.windows.active {
+    background: rgba(98, 97, 97, 0.573);
+}
+
+.icon-white {
+    height: 12px;
+}
+
+.icon-blue {
+    height: 12px;
+    display: none;
+}
+
+.popup-windows {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 0px;
+    background: rgba(3, 6, 19, 0.821);
+    display: flex;
+    transition: height 0.2s ease;
+    
+}
+
+.popup-windows.active {
+    height: 334px;
+}
+
+.sidebar {
+    width: 24px;
+    height: 0vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+}
+
+.sidebar.active {
+    height: 54vh;
+}
+
+.sidebar:hover {
+    transition-delay: 1s;
+    width: 150px;
+    transition-duration: 0.5s;
+    background: rgba(3, 6, 19, 0.821);
+}
+
+.power-off {
+    height: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 7px;
+}
+
+.power-off p {
+    font-size: 10px;
+    gap: 15px;
+    color: rgba(255, 255, 255, 0.816);
+    position: relative;
+    top: 0.2px;
+}
+
+.icon-power-off {
+    height: 9px;
+}
+
+.power-off:hover {
+    background: rgba(98, 97, 97, 0.573);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+
