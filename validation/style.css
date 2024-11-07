@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
     margin: 0;
-    
+
 }
 
 .screen-blur {
@@ -24,6 +24,7 @@ body {
 .screen-blur.active {
     filter: blur(6px);
     transition-duration: 0.5s;
+
 }
 
 .clock {
@@ -56,4 +57,39 @@ body {
     top: 60%;
     opacity: 0;
     transition-duration: 0.1s;
+}
+
+.user-icon {
+    height: 10em;
+    width: 100px;
+}
+
+.fundo-user {
+    background-color: white;
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-login  {
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bloco-login {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-submit {
+    width: 17em;
+    padding: 4.5px;  
 }
