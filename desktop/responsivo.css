@@ -80,7 +80,6 @@ body{
     transition-delay: 1s;
     transition-duration: 0.5s;
     background: rgba(3, 6, 19, 0.821);
-    position: relative;
 }
 
 .power-off {
