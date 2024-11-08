@@ -23,14 +23,15 @@ function time() {
 setInterval(time);
 
 function animationScreen() {
-    const screenBlur = document.querySelector('.screen-blur') as HTMLDivElement;
     const container = document.querySelector('.container') as HTMLDivElement;
+    const tempo = document.querySelector('.tempo') as HTMLDivElement;
     const displaylogin = document.querySelector('.bloco-login') as HTMLDivElement;
-    
-    screenBlur.addEventListener('click', () => {
-        container.classList.add('active');
-        screenBlur.classList.add('active');
-        displaylogin.classList.add('active');
+    const body = document.body;
+
+    container.addEventListener('click', () => {
+        tempo.classList.add('active');
+        displaylogin.style.opacity = 'initial';
+        body.style.backdropFilter = 'blur(6px)';
     })
 }
 

@@ -10,22 +10,13 @@ body {
     font-weight: 200;
 }
 
-.screen-blur {
-    background-image: url(img/beach-cove-computer-lock-screen-04be5pfbvoowaw3x.jpg);
-    background-size: cover;
-    background-position: center;
+.container {
     height: 100vh;
     margin: 0;
     box-sizing: border-box;
-    filter: blur(0px);
     display: flex;
+    justify-content: stretch;
     align-items: end;
-}
-
-
-.screen-blur.active {
-    filter: blur(6px);
-    transition-duration: 0.5s;
 }
 
 .clock {
@@ -40,13 +31,14 @@ body {
     font-size: 3vw;
 }
 
-.container {
+.tempo {
    padding-left: 2vw;
    padding-bottom: 5vw;
+   position: absolute;
 } 
 
-.container.active {
-    top: 60%;
+.tempo.active {
+    padding-bottom: 6vw;
     opacity: 0;
     transition-duration: 0.1s;
 }
@@ -68,23 +60,16 @@ body {
 }
 
 .bloco-login {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
-    position: absolute;
+    width: 100vw;
     color: beige;
     opacity: 0;
-    left: 50em;
-    top: -10%;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-}
-
-
-.bloco-login.active {
-    opacity: 100;
-    transition-duration: 1s;
 }
 
 .titulo-login {

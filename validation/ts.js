@@ -14,13 +14,14 @@ function time() {
 }
 setInterval(time);
 function animationScreen() {
-    var screenBlur = document.querySelector('.screen-blur');
     var container = document.querySelector('.container');
+    var tempo = document.querySelector('.tempo');
     var displaylogin = document.querySelector('.bloco-login');
-    screenBlur.addEventListener('click', function () {
-        container.classList.add('active');
-        screenBlur.classList.add('active');
-        displaylogin.classList.add('active');
+    var body = document.body;
+    container.addEventListener('click', function () {
+        tempo.classList.add('active');
+        displaylogin.style.opacity = 'initial';
+        body.style.backdropFilter = 'blur(6px)';
     });
 }
 animationScreen();
