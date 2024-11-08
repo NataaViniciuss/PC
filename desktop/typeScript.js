@@ -22,3 +22,14 @@ function exibirPopUp() {
     });
 }
 exibirPopUp();
+function exibirPowerOf() {
+    var sidebar = document.querySelector('.sidebar');
+    var powerOf = document.querySelector('.power-off');
+    sidebar.addEventListener('mouseenter', function () {
+        powerOf.classList.add('active');
+    });
+    sidebar.addEventListener('mouseleave', function () {
+        powerOf.classList.remove('active');
+    });
+}
+exibirPowerOf();

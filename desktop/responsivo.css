@@ -101,8 +101,15 @@ body{
     transition-duration: 0.5s;
 }
 
+.power-off.active {
+    position: relative;
+    right: 3.5vw;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+}
+
 .power-off p {
-    font-size: 8px;
+    font-size: 0.8vw;
     color: rgba(255, 255, 255, 0.816);
     position: relative;
     top: 1.5%;
