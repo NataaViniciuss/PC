@@ -67,7 +67,7 @@ body{
 
     justify-content: end;
     position: fixed;
-    transition: height 0.2s ease;
+    
     
 }
 
@@ -80,20 +80,29 @@ body{
     transition-delay: 1s;
     transition-duration: 0.5s;
     background: rgba(3, 6, 19, 0.821);
+    position: relative;
 }
 
 .power-off {
     width: 14vw;
     height: 3.7vh;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: flex-start;
-    gap: 10px;
-    padding-left: 7px;
+    gap: 10%;
+    padding-left: 30%;
+    right: 0;
+}
+
+.power-off:hover {
+    position: relative;
+    right: 3.5vw;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
 }
 
 .power-off p {
-    font-size: 10px;
+    font-size: 0.5em;
     color: rgba(255, 255, 255, 0.816);
     position: relative;
     top: 1.5%;
@@ -110,6 +119,9 @@ body{
 nav a {
     text-decoration: none;
 }
+
+
+
 
 
 
