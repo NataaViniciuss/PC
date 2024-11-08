@@ -102,7 +102,7 @@ body{
 }
 
 .power-off p {
-    font-size: 0.5em;
+    font-size: 8px;
     color: rgba(255, 255, 255, 0.816);
     position: relative;
     top: 1.5%;
