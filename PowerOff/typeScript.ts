@@ -9,11 +9,11 @@ function reloadScreen() {
     myLink.addEventListener('click', function(e){
         e.preventDefault();
 
+        span1.style.animation = 'shine 3s ease-in 0.7s';
+        span2.style.animation = 'shine 2.5s ease-in 1.2s';
         powerOn.style.transform = 'rotate(90deg)';
-        span1.style.animation = 'shine 3s ease-in 0.5s';
-        span2.style.animation = 'shine 2.5s ease-in 1s';
-        span3.style.animation = 'shine 2s ease-in 1.5s';
-        span4.style.animation = 'shine 1.5s ease-in 2s';
+        span3.style.animation = 'shine 2s ease-in 2.2s';
+        span4.style.animation = 'shine 1.5s ease-in 2.7s';
 
         const hrefLink = this.getAttribute('data-target') as string;
         
