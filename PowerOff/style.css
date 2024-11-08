@@ -21,34 +21,35 @@ body {
     position: relative;
     top: 0.1em;
     transition: transform 0.7s ease;
+    transition-delay: 1.5s;
 }
 
-.power-on:hover {
+/* .power-on:hover {
     transform: rotate(90deg);
-}
+} */
 
 a{
     text-decoration: none;
 }
 
-.text-power-on span{
+/* .text-power-on span{
     
-}
+} */
 
 .a {
-    animation: shine 3s ease-in 0.5s;
+
 }
 
 .b {
-    animation: shine 2.5s ease-in 1s;
+    
 }
 
 .c {
-    animation: shine 2s ease-in 1.5s;
+
 }
 
 .d {
-    animation: shine 1.5s ease-in 2s;
+    
 }
 
 
