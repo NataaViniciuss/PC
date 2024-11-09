@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5em;
+    font-size: 7em;
     gap: 0.3em;
 }
 
@@ -36,7 +36,7 @@ a{
 /* .text-power-on span{
     
 } */
-
+/* 
 .a {
 
 }
@@ -51,7 +51,7 @@ a{
 
 .d {
     
-}
+} */
 
 
 @keyframes shine{

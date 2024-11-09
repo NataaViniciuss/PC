@@ -44,49 +44,58 @@ body {
 }
 
 .icon-user {
-    height: 52%;
+    height: 5.3vw;
 }
 
 .circle {
-    width: 200px;
-    height: 200px;
     background-color: rgb(228, 228, 228);
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: relative;
-   
+    justify-content: center;    
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50vw;
+    
 }
 
 .bloco-login {
-    height: 100vh;
-    width: 100vw;
     color: beige;
     opacity: 0;
-    transition-duration: 0.5s;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    gap: 0.8vw;
+    
+    
+    height: 110vh;
+    width: 100vw;
+    position: absolute;
 }
 
-.titulo-login {
-    position: relative;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    bottom: 29px;
-    font-weight: 400;
-    font-size: 3em;
+.bloco-login.active{
+    transition-duration: 1s;
+    opacity: initial;
 }
+
+.title-log {
+    font-weight: 200;
+    font-size: 2.4vw;
+    margin: 0;
+}
+
 
 .input-password {
-    padding: 9px;
-    width: 20em;
-    position: relative;
-    top: -49px;
+    padding: 0.5vw;
+    width: 13.4vw;
+    height: 0.5vw;
     border: 2px solid grey;
     outline: none;
+}
+
+.input-password::placeholder {
+    font-size: 0.8vw;
 }
 
 .input-password:hover {
