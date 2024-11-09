@@ -25,14 +25,20 @@ setInterval(time);
 function animationScreen() {
     const container = document.querySelector('.container') as HTMLDivElement;
     const tempo = document.querySelector('.tempo') as HTMLDivElement;
-    const displaylogin = document.querySelector('.bloco-login') as HTMLDivElement;
+    const blocoLogin = document.querySelector('.bloco-login') as HTMLDivElement;
     const body = document.body;
 
     container.addEventListener('click', () => {
         tempo.classList.add('active');
-        displaylogin.style.opacity = 'initial';
+        blocoLogin.classList.toggle('active');
+        blocoLogin.style.opacity = 'initial';
         body.style.backdropFilter = 'blur(6px)';
-    })
+
+        setTimeout(function() {
+            blocoLogin.classList.remove('active')
+        }, 500);
+    });
+
 }
 
 animationScreen();

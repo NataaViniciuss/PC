@@ -16,12 +16,16 @@ setInterval(time);
 function animationScreen() {
     var container = document.querySelector('.container');
     var tempo = document.querySelector('.tempo');
-    var displaylogin = document.querySelector('.bloco-login');
+    var blocoLogin = document.querySelector('.bloco-login');
     var body = document.body;
     container.addEventListener('click', function () {
         tempo.classList.add('active');
-        displaylogin.style.opacity = 'initial';
+        blocoLogin.classList.toggle('active');
+        blocoLogin.style.opacity = 'initial';
         body.style.backdropFilter = 'blur(6px)';
+        setTimeout(function () {
+            blocoLogin.classList.remove('active');
+        }, 500);
     });
 }
 animationScreen();
