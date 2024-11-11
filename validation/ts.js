@@ -29,3 +29,19 @@ function animationScreen() {
     });
 }
 animationScreen();
+function validationUser() {
+    var iconConfirm = document.querySelector('.icon-confirm ');
+    var inputPassword = document.querySelector('.input-password');
+    var senhaCorreta = 'Autotech123';
+    console.log(senhaCorreta);
+    iconConfirm.addEventListener('click', function () {
+        var senhaDigitada = inputPassword.value;
+        if (senhaDigitada === senhaCorreta) {
+            window.location.href = '/desktop/desktop.html';
+        }
+        else {
+            alert('senha errada vacilão');
+        }
+    });
+}
+validationUser();

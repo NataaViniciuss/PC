@@ -13,12 +13,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 7em;
+    font-size: 9vw;
     gap: 0.3em;
 }
 
 .power-on {
-    width: 0.9em;
+    width: 8vw;
     position: relative;
     top: 0.1em;
     transition: transform 0.7s ease;

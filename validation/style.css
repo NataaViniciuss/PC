@@ -52,8 +52,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;    
-    height: 9vw;
-    width: 9vw;
+    height: 10vw;
+    width: 10vw;
     border-radius: 50vw;
     
 }
@@ -87,17 +87,34 @@ body {
 
 
 .input-password {
-    padding: 0.5vw;
-    width: 13.4vw;
-    height: 0.5vw;
-    border: 2px solid grey;
+    padding: 0.5vw 0 0.5vw 0.5vw;
+    width: 13vw;
+    height: 0.6vw;
+    border: 0.1vw solid grey;
     outline: none;
+    font-size: 1.3vw;  
+    position: relative;
+    left: 1vw;
 }
 
 .input-password::placeholder {
     font-size: 0.8vw;
+    position: relative;
+    bottom: 0.1vw;
 }
 
 .input-password:hover {
-    border: 2px solid white;
+    border: 0.1vw solid white;
+}
+
+.icon-confirm {
+    border: 0.1vw solid grey;
+    position: relative;
+    top: 0.42vw;
+    right: 1vw;
+    height: 1.6vw;
+}
+
+.icon-confirm:hover {
+    border: 0.1vw solid rgb(255, 255, 255);
 }
