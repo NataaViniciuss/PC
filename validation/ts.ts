@@ -42,3 +42,21 @@ function animationScreen() {
 }
 
 animationScreen();
+
+function validationUser() {
+    const iconConfirm = document.querySelector('.icon-confirm ') as HTMLImageElement;
+    const inputPassword = document.querySelector('.input-password') as HTMLInputElement;
+    const senhaCorreta = 'Autotech123'
+    console.log(senhaCorreta)
+    iconConfirm.addEventListener('click', () => {
+        
+        const senhaDigitada = inputPassword.value;
+        
+        if(senhaDigitada === senhaCorreta) { 
+            window.location.href = '/desktop/desktop.html'
+        } else {
+            alert ('senha errada vacilão');
+        }
+    });
+}
+validationUser()
