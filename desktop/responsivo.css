@@ -150,6 +150,73 @@ nav a {
    display: flex;
 }
 
+.popup-restart {
+    position: absolute;
+    bottom: 4.4vw;
+    width: 14vw;
+    height: 5.5vw;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.suspend {
+    background: #222324;
+    width: 13.8vw;
+    height: 1.65vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.suspend img {
+
+}
+
+.suspend:hover {
+    background: crimson;
+}
+
+.desligar {
+    background: #222324;
+    width: 13.8vw;
+    height: 1.65vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.desligar img:hover {
+    
+}
+
+
+.desligar:hover {
+    background: crimson;
+    
+}
+
+.restart {
+    background: #222324;
+    width: 13.8vw;
+    height: 1.65vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.restart img {
+    
+}
+
+
+.restart:hover {
+    background: crimson;
+    
+}
+
 
 
 
