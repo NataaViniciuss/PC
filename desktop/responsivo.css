@@ -176,7 +176,7 @@ nav a {
 }
 
 .suspend:hover {
-    background: crimson;
+    background: #616060;
 }
 
 .desligar {
@@ -194,7 +194,7 @@ nav a {
 
 
 .desligar:hover {
-    background: crimson;
+    background: #616060;
     
 }
 
@@ -213,7 +213,7 @@ nav a {
 
 
 .restart:hover {
-    background: crimson;
+    background: #616060;
     
 }
 
