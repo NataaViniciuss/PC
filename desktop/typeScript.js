@@ -24,12 +24,20 @@ function exibirPopUp() {
 exibirPopUp();
 function exibirPowerOf() {
     var sidebar = document.querySelector('.sidebar');
-    var powerOf = document.querySelector('.power-off');
+    var powerOff = document.querySelector('.power-off');
     sidebar.addEventListener('mouseenter', function () {
-        powerOf.classList.add('active');
+        powerOff.classList.add('active');
     });
     sidebar.addEventListener('mouseleave', function () {
-        powerOf.classList.remove('active');
+        powerOff.classList.remove('active');
     });
 }
 exibirPowerOf();
+function clickInPower() {
+    var powerOff = document.querySelector('.power-off');
+    var popupRestart = document.querySelector('.popup-restart');
+    powerOff.addEventListener('click', function () {
+        popupRestart.classList.toggle('active');
+    });
+}
+clickInPower();

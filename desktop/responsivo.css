@@ -96,13 +96,6 @@ body{
     right: 0;
 }
 
-.power-off:hover {
-    position: relative;
-    right: 3.5vw;
-    transition-delay: 1s;
-    transition-duration: 0.5s;
-}
-
 .power-off.active {
     position: relative;
     right: 3.5vw;
@@ -152,27 +145,38 @@ nav a {
 
 .popup-restart {
     position: absolute;
-    bottom: 4.4vw;
+    bottom: 7.7vh;
     width: 14vw;
-    height: 5.5vw;
-    background: white;
+    height: 0vw;
+    background: #222324;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition-duration: 0.2s;
+    overflow: hidden;
+   
+}
+
+.popup-restart.active {
+    overflow: hidden;
+    height: 5.5vw;
 }
 
 .suspend {
     background: #222324;
-    width: 13.8vw;
+    width: 13.5vw;
     height: 1.65vw;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 0.5vw;
+    gap: 0.5vw;
 }
 
-.suspend img {
-
+.suspend p {
+    color: white;
+    font-size: 0.6vw;
 }
 
 .suspend:hover {
@@ -181,17 +185,19 @@ nav a {
 
 .desligar {
     background: #222324;
-    width: 13.8vw;
+    width: 13.5vw;
     height: 1.65vw;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 0.5vw;
+    gap: 0.5vw;
 }
 
-.desligar img:hover {
-    
+.desligar p {
+    color: white;
+    font-size: 0.6vw;
 }
-
 
 .desligar:hover {
     background: #616060;
@@ -200,24 +206,21 @@ nav a {
 
 .restart {
     background: #222324;
-    width: 13.8vw;
+    width: 13.6vw;
     height: 1.65vw;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 0.4vw;
+    gap: 0.5vw;
 }
 
-.restart img {
-    
+.restart p {
+    color: white;
+    font-size: 0.6vw;
 }
-
 
 .restart:hover {
     background: #616060;
     
 }
-
-
-
-
-
