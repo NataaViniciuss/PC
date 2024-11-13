@@ -44,14 +44,18 @@ exibirPowerOf();
 
 function clickInPower() {
     const powerOff = document.querySelector('.power-off') as HTMLDivElement;
-    const popupRestart = document.querySelector('.popup-restart') as HTMLDivElement;
-   
-    powerOff.addEventListener('click', () => {
-        popupRestart.classList.toggle('active');
-        
-    })
+    const teste = document.getElementById('teste') as HTMLDivElement;
 
-    
-
+    document.addEventListener('click', function(event) {
+        if(powerOff.contains(event.target as Node)) {
+                if(teste.classList.contains('active')) {
+                        teste.classList.remove('active')
+                } else {
+                        teste.classList.add('active');
+                    }   
+        } else {
+                        teste.classList.add('active');
+        }
+    });
 }
 clickInPower();

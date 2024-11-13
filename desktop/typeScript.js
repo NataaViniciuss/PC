@@ -35,9 +35,19 @@ function exibirPowerOf() {
 exibirPowerOf();
 function clickInPower() {
     var powerOff = document.querySelector('.power-off');
-    var popupRestart = document.querySelector('.popup-restart');
-    powerOff.addEventListener('click', function () {
-        popupRestart.classList.toggle('active');
+    var teste = document.getElementById('teste');
+    document.addEventListener('click', function (event) {
+        if (powerOff.contains(event.target)) {
+            if (teste.classList.contains('active')) {
+                teste.classList.remove('active');
+            }
+            else {
+                teste.classList.add('active');
+            }
+        }
+        else {
+            teste.classList.add('active');
+        }
     });
 }
 clickInPower();
