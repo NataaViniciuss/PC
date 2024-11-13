@@ -30,14 +30,28 @@ exibirPopUp();
 
 function exibirPowerOf() {
     const sidebar = document.querySelector('.sidebar') as HTMLDivElement;
-    const powerOf = document.querySelector('.power-off') as HTMLDivElement;
+    const powerOff = document.querySelector('.power-off') as HTMLDivElement;
 
     sidebar.addEventListener('mouseenter', () =>{
-        powerOf.classList.add('active');
+        powerOff.classList.add('active');
     })
 
     sidebar.addEventListener('mouseleave', () =>{
-        powerOf.classList.remove('active');
+        powerOff.classList.remove('active');
     })
 }
 exibirPowerOf();
+
+function clickInPower() {
+    const powerOff = document.querySelector('.power-off') as HTMLDivElement;
+    const popupRestart = document.querySelector('.popup-restart') as HTMLDivElement;
+   
+    powerOff.addEventListener('click', () => {
+        popupRestart.classList.toggle('active');
+        
+    })
+
+    
+
+}
+clickInPower();
