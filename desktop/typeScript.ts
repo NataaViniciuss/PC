@@ -1,15 +1,15 @@
-const windows = document.querySelector('.windows') as HTMLDivElement;
+const divWindows = document.querySelector('.div-windows') as HTMLDivElement;
 
 function colorWindows() {
     const iconWhite = document.querySelector('.icon-white') as HTMLImageElement;
     const iconBlue = document.querySelector('.icon-blue') as HTMLImageElement;
     
-    windows.addEventListener('mouseenter', () => {
+    divWindows.addEventListener('mouseenter', () => {
         iconWhite.style.display = 'none';
         iconBlue.style.display = 'unset';
     })
 
-    windows.addEventListener('mouseleave', () => {
+    divWindows.addEventListener('mouseleave', () => {
         iconWhite.style.display = 'unset';
         iconBlue.style.display = 'none';
     })
@@ -20,8 +20,8 @@ function exibirPopUp() {
     const popupWindows = document.querySelector('.popup-windows') as HTMLDivElement;
     const sidebar = document.querySelector('.sidebar') as HTMLDivElement;
     
-    windows.addEventListener('click', () => {
-        windows.classList.toggle('active');
+    divWindows.addEventListener('click', () => {
+        divWindows.classList.toggle('active');
         popupWindows.classList.toggle('active');
         sidebar.classList.toggle('active');
     })

@@ -1,12 +1,12 @@
-var windows = document.querySelector('.windows');
+var divWindows = document.querySelector('.div-windows');
 function colorWindows() {
     var iconWhite = document.querySelector('.icon-white');
     var iconBlue = document.querySelector('.icon-blue');
-    windows.addEventListener('mouseenter', function () {
+    divWindows.addEventListener('mouseenter', function () {
         iconWhite.style.display = 'none';
         iconBlue.style.display = 'unset';
     });
-    windows.addEventListener('mouseleave', function () {
+    divWindows.addEventListener('mouseleave', function () {
         iconWhite.style.display = 'unset';
         iconBlue.style.display = 'none';
     });
@@ -15,8 +15,8 @@ colorWindows();
 function exibirPopUp() {
     var popupWindows = document.querySelector('.popup-windows');
     var sidebar = document.querySelector('.sidebar');
-    windows.addEventListener('click', function () {
-        windows.classList.toggle('active');
+    divWindows.addEventListener('click', function () {
+        divWindows.classList.toggle('active');
         popupWindows.classList.toggle('active');
         sidebar.classList.toggle('active');
     });

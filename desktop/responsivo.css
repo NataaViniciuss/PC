@@ -14,14 +14,14 @@ body{
 }
 
 .barra {
-    background-color: rgba(5, 13, 44, 0.882);
+    background: var(--cor-barra);
     width: 100vw;
     height: 3.7vh;
     display: flex;
     flex-direction: row;
 }
 
-.windows {
+.div-windows {
     width: 2.2vw;
     height: 3.7vh;
     display: flex;
@@ -29,16 +29,16 @@ body{
     justify-content: center;
 }
 
-.windows:hover {
-    background: rgba(98, 97, 97, 0.573);
+.div-windows:hover {
+    background: var(--cor-hover);
 }
 
-.windows:active{
-    background: rgba(98, 97, 97, 0.573);
+.div-windows:active{
+    background: var(--cor-hover);
 }
 
-.windows.active {
-    background: rgba(98, 97, 97, 0.573);
+.div-windows.active {
+    background: var(--cor-hover);
 }
 
 .icon-white {
@@ -51,7 +51,7 @@ body{
 }
 
 .popup-windows {
-    background: rgba(3, 6, 19, 0.821);
+    background: var(--cor-popUp);
     width: 34%; 
     height: 0vh;
     transition: height 0.2s ease;
@@ -82,7 +82,7 @@ body{
     width: 14vw;
     transition-delay: 1s;
     transition-duration: 0.5s;
-    background: rgba(3, 6, 19, 0.821);
+    background: var(--cor-lateral);
 }
 
 .power-off {
@@ -105,7 +105,7 @@ body{
 
 .power-off p {
     font-size: 0.8vw;
-    color: rgba(255, 255, 255, 0.816);
+    color: var(--cor-fonte);
     position: relative;
     top: 1.5%;
 }
@@ -115,7 +115,7 @@ body{
 }
 
 .power-off:hover {
-    background: rgba(98, 97, 97, 0.573);
+    background: var(--cor-hover);
 }
 
 nav a {
@@ -123,7 +123,7 @@ nav a {
 }
 
 .container-time {
-    color: white;
+    color: var(--cor-fonte);
     font-size: 1.2vh;
     height: 3.7vh;
     width: 7vh;
@@ -136,7 +136,7 @@ nav a {
 }
 
 .container-time:hover {
-    background: rgba(98, 97, 97, 0.573);
+    background: var(--cor-hover);
 }
 
 .clock {
@@ -148,13 +148,14 @@ nav a {
     bottom: 7.7vh;
     width: 14vw;
     height: 5.5vw;
-    background: #222324;
+    background: var(--cor-reiniciar);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition-duration: 0.2s;
     overflow: hidden;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
    
 }
 
@@ -165,7 +166,7 @@ nav a {
 }
 
 .suspend {
-    background: #222324;
+    background: var(--cor-reiniciar);
     width: 13.5vw;
     height: 1.65vw;
     display: flex;
@@ -176,16 +177,16 @@ nav a {
 }
 
 .suspend p {
-    color: white;
+    color: var(--cor-fonte);
     font-size: 0.6vw;
 }
 
 .suspend:hover {
-    background: #616060;
+    background: var(--cor-hover-icon);
 }
 
 .desligar {
-    background: #222324;
+    background: var(--cor-reiniciar);
     width: 13.5vw;
     height: 1.65vw;
     display: flex;
@@ -196,17 +197,17 @@ nav a {
 }
 
 .desligar p {
-    color: white;
+    color: var(--cor-fonte);
     font-size: 0.6vw;
 }
 
 .desligar:hover {
-    background: #616060;
+    background: var(--cor-hover-icon);
     
 }
 
 .restart {
-    background: #222324;
+    background: var(--cor-reiniciar);
     width: 13.6vw;
     height: 1.65vw;
     display: flex;
@@ -217,11 +218,11 @@ nav a {
 }
 
 .restart p {
-    color: white;
+    color: var(--cor-fonte);
     font-size: 0.6vw;
 }
 
 .restart:hover {
-    background: #616060;
+    background: var(--cor-hover-icon);
     
 }
