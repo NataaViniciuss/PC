@@ -21,22 +21,22 @@ function effectHover() {
     var iconSuspend = document.getElementById('icon-suspend');
     var iconDesligar = document.getElementById('icon-desligar');
     DivRestart.addEventListener('mouseenter', function () {
-        iconRestart.src = 'img/icon/resestart.png';
+        iconRestart.src = 'icons/popup-restart/reiniciar-hover.png';
     });
     DivRestart.addEventListener('mouseleave', function () {
-        iconRestart.src = 'img/icon/restart-icon.png';
+        iconRestart.src = 'icons/popup-restart/reiniciar.png';
     });
     DivSuspend.addEventListener('mouseenter', function () {
-        iconSuspend.src = 'img/icon/suspend.png';
+        iconSuspend.src = 'icons/popup-restart/suspender-hover.png';
     });
     DivSuspend.addEventListener('mouseleave', function () {
-        iconSuspend.src = 'img/icon/suspend-origin.png';
+        iconSuspend.src = 'icons/popup-restart/suspender.png';
     });
     DivDesligar.addEventListener('mouseenter', function () {
-        iconDesligar.src = 'img/icon/desligar.png';
+        iconDesligar.src = 'icons/popup-restart/desligar-hover.png';
     });
     DivDesligar.addEventListener('mouseleave', function () {
-        iconDesligar.src = 'img/icon/powerof-origin.png';
+        iconDesligar.src = 'icons/popup-restart/desligar.png';
     });
 }
 effectHover();
