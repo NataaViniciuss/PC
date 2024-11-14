@@ -29,7 +29,7 @@ function validationUser() {
         const senhaDigitada = inputPassword.value;
         
         if(senhaDigitada === senhaCorreta) { 
-            window.location.href = '/desktop/desktop.html'
+            window.location.href = '/desktop/dist/desktop.html'
         } else {
             alert ('senha errada vacilão');
         }
