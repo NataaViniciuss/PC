@@ -25,34 +25,9 @@ body {
     transition-delay: 1.5s;
 }
 
-/* .power-on:hover {
-    transform: rotate(90deg);
-} */
-
 a{
     text-decoration: none;
 }
-
-/* .text-power-on span{
-    
-} */
-/* 
-.a {
-
-}
-
-.b {
-    
-}
-
-.c {
-
-}
-
-.d {
-    
-} */
-
 
 @keyframes shine{
     0% {

@@ -1,0 +1,68 @@
+.popup-windows {
+    background: var(--cor-popUp);
+    width: 34%; 
+    height: 0vh;
+    transition: height 0.2s ease;
+}
+
+.popup-windows.active {
+    height: 55.5vh;
+}
+
+.sidebar {
+    width: 2.2vw;
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: end;
+    position: fixed;
+}
+
+.sidebar.active {
+    height: 55.5vh;
+}
+
+.sidebar:hover {
+    width: 14vw;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+    background: var(--cor-lateral);
+}
+
+.power-off {
+    width: 14vw;
+    height: 3.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10%;
+    padding-left: 30%;
+    right: 0;
+}
+
+.power-off.active {
+    position: relative;
+    right: 3.5vw;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+}
+
+.power-off p {
+    font-size: 0.8vw;
+    color: var(--cor-fonte);
+    position: relative;
+    top: 1.5%;
+}
+
+.icon-power-off {
+    height: 1.4vh;
+}
+
+.power-off:hover {
+    background: var(--cor-hover);
+}
+
+nav a {
+    text-decoration: none;
+}

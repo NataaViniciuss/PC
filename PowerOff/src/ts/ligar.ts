@@ -1,4 +1,4 @@
-function reloadScreen() {
+function animationPowerOn() {
     const myLink = document.querySelector('.teste') as HTMLElement;
     const powerOn = document.querySelector('.power-on') as HTMLImageElement;
     const span1 = document.querySelector('.a') as HTMLSpanElement;
@@ -22,4 +22,4 @@ function reloadScreen() {
         }, 3000);
     });
 }
-reloadScreen();
+animationPowerOn();
